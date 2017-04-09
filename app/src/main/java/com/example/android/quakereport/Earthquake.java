@@ -8,12 +8,12 @@ public class Earthquake {
 
     String mag;
     String loc;
-    String date;
+    private long mTimeInMilliseconds;
 
-    public Earthquake(String mag, String loc, String date) {
+    public Earthquake(String mag, String loc, long mTimeInMilliseconds) {
         this.mag = mag;
         this.loc = loc;
-        this.date = date;
+        this.mTimeInMilliseconds = mTimeInMilliseconds;
     }
 
     public String getMag() {
@@ -24,7 +24,7 @@ public class Earthquake {
         return loc;
     }
 
-    public String getDate() {
-        return date;
+    public long getTimeInMilliseconds() {
+        return mTimeInMilliseconds;
     }
 }
