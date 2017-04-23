@@ -6,17 +6,17 @@ package com.example.android.quakereport;
 
 public class Earthquake {
 
-    String mag;
+    private double mag;
     String loc;
     private long mTimeInMilliseconds;
 
-    public Earthquake(String mag, String loc, long mTimeInMilliseconds) {
+    public Earthquake(double mag, String loc, long mTimeInMilliseconds) {
         this.mag = mag;
         this.loc = loc;
         this.mTimeInMilliseconds = mTimeInMilliseconds;
     }
 
-    public String getMag() {
+    public double getMag() {
         return mag;
     }
 
