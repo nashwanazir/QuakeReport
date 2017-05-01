@@ -8,12 +8,19 @@ public class Earthquake {
 
     private double mag;
     String loc;
-    private long mTimeInMilliseconds;
 
-    public Earthquake(double mag, String loc, long mTimeInMilliseconds) {
+    public String getUrl() {
+        return url;
+    }
+
+    private long mTimeInMilliseconds;
+    String url;
+
+    public Earthquake(double mag, String loc, long mTimeInMilliseconds,String url) {
         this.mag = mag;
         this.loc = loc;
         this.mTimeInMilliseconds = mTimeInMilliseconds;
+        this.url=url;
     }
 
     public double getMag() {
